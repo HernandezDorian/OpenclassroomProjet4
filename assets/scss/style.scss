@@ -13,6 +13,11 @@ body{
     font-family: $txtPolice
 }
 
+
+.global{
+    
+}
+
 .firstElem{
     display: flex;
     width: 100%;
@@ -22,7 +27,7 @@ body{
         &__logo{
             padding: 14px 0 14px 0;
 
-        }
+        }       
 }
 
 .location{
@@ -46,11 +51,12 @@ body{
 }
 
 .explore{
+    
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 0 1% 0 1%;
+    padding-bottom: 40px;
     background: #F6F6F6;
     &__button{
         border-radius: 25px;
@@ -66,4 +72,153 @@ body{
             white-space: nowrap;
         }
     }
+}
+
+.fonction{
+    padding-bottom: 40px;
+    &__title{
+        margin-left: 6%;
+    }
+
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        &__elem{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #F6F6F6;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            width: 80%;
+            max-width: 322px;
+            padding: 8px;
+            
+            &__nbr{
+                z-index: 1;
+                position: relative;
+                left: -19px;
+            }
+
+            &__ico{
+                
+            }
+
+            &__txt{
+
+            }
+        }
+    }
+
+}
+
+.resto{
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    gap: 20px;
+
+    &__title{
+        // align-self: flex-start;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        border-radius: 15px;
+        background-color: #FFF;
+        &__show{
+
+            &__new{
+                display: flex;
+                border-radius: 2px;
+                background-color: #99E2D0;
+                padding: 2%;
+                color: #008766;
+                text-align: center;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+                margin: 15px 15px 15px auto;
+                width: fit-content;
+                // float: right;
+                // position: relative;
+                // bottom: -14px;
+                // right: 7px;
+                font-size: 4.5VW;
+
+                &--hide{
+                    visibility: hidden;
+                }
+            }
+
+            &__img{
+                
+                display: flex;
+                width: 100%;
+                
+                // transform: translate(0, -15%)
+                border-radius: 15px 15px 0 0;
+                // right: 0;
+                // bottom: 0;
+                // background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+                
+                background-size: cover;
+                padding-bottom: 50%;
+                
+                
+            
+            }
+
+        }
+
+        &__info{
+            display: flex;
+            padding: 15px;
+            justify-content: space-between;
+            // transform: translate(0, -15%);
+            &__block{
+                display: flex;
+                flex-direction: column;
+                font-size: 4.5vw;
+                gap: 10px;
+                &__title{
+                    margin: 0;
+                }
+                &__txt{
+                    margin: 0;
+                }
+            }
+
+            &__img{
+                align-self: center;
+                height: 6vw;
+                max-height: 100px;
+            }
+        }
+    }
+}
+
+.bgres1{
+    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.bgres2{
+    background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-position: 20% 70%;
+}
+
+.bgres3{
+    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    
+}
+
+.bgres4{
+    background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
