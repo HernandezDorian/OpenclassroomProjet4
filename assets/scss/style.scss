@@ -120,6 +120,7 @@ body{
     flex-direction: column;
     background-color: #F6F6F6;
     gap: 20px;
+    padding-bottom: 65px;
 
     &__title{
         // align-self: flex-start;
@@ -221,4 +222,32 @@ body{
 
 .bgres4{
     background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.footer{
+    background-color: #353535;
+    padding: 25px;
+    
+    &__logo{
+        filter: invert(99%) sepia(75%) saturate(0%) hue-rotate(271deg) brightness(113%) contrast(100%);
+        margin-bottom: 10px;
+        width: 136px;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        height: 20%;
+        justify-content: center;
+        &__elem{
+            display: flex;
+            gap: 11px;
+            color: #FFF;
+            
+            &__ico{
+                overflow-clip-margin: unset;
+            }
+        }
+    }
 }
