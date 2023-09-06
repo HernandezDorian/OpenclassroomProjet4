@@ -45,6 +45,10 @@ body {
   border-radius: 25px;
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.explore__button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 .explore__button__txt {
   padding: 15px 17px 15px 17px;
@@ -144,7 +148,14 @@ body {
 .resto__card__info__img {
   align-self: center;
   height: 6vw;
-  max-height: 100px;
+  width: 6vw;
+  background-image: url("../images/icon/Status=Default.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.resto__card__info__img:hover {
+  background-image: url("../images/icon/Status=Liked.svg");
 }
 
 .bgres1 {
