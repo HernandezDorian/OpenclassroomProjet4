@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding-bottom: 40px;
+  padding: 65px 0;
   background: #F6F6F6;
 }
 .explore__txt {
@@ -69,7 +69,7 @@ body {
 .fonction {
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
+  padding: 65px 0;
 }
 .fonction__title {
   margin: auto;
@@ -83,6 +83,13 @@ body {
   gap: 25px;
   width: 80%;
 }
+@media only screen and (min-width: 1040px) {
+  .fonction__cards {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .fonction__cards__elem {
   display: flex;
   gap: 10px;
@@ -90,8 +97,8 @@ body {
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  width: 80%;
-  max-width: 322px;
+  width: 100%;
+  max-width: 325px;
   padding: 8px;
 }
 .fonction__cards__elem__nbr {
@@ -103,21 +110,37 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
+  padding: 65px 0;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  padding-bottom: 65px;
+}
+@media only screen and (min-width: 1040px) {
+  .resto--grp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
 }
 .resto__title {
   width: 80%;
-  margin-bottom: 5px;
   margin: auto;
 }
 .resto__card {
   display: flex;
   flex-direction: column;
   width: 80%;
+  max-width: 500px;
   border-radius: 15px;
   background-color: #FFF;
   margin: auto;
+}
+@media only screen and (min-width: 1040px) {
+  .resto__card {
+    width: 500px;
+  }
 }
 .resto__card__show__new {
   display: flex;
@@ -129,7 +152,8 @@ body {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   margin: 15px 15px 15px auto;
   width: fit-content;
-  font-size: 4.5VW;
+  font-size: 100%;
+  max-width: 125px;
 }
 .resto__card__show__new--hide {
   visibility: hidden;
@@ -137,6 +161,7 @@ body {
 .resto__card__show__img {
   display: flex;
   width: 100%;
+  max-width: 500px;
   border-radius: 15px 15px 0 0;
   background-size: cover;
   padding-bottom: 50%;
@@ -162,6 +187,8 @@ body {
   align-self: center;
   height: 6vw;
   width: 6vw;
+  max-width: 40px;
+  max-height: 40px;
   background-image: url("../images/icon/Status=Default.svg");
   background-repeat: no-repeat;
   background-size: cover;
