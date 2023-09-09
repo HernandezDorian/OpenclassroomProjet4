@@ -13,6 +13,10 @@ body{
     font-family: $txtPolice
 }
 
+a{
+    text-decoration: none !important;
+}
+
 
 .global{
     display: flex;
@@ -149,6 +153,7 @@ body{
     display: flex;
     flex-direction: column;
     width: auto;
+    gap: 20px;
     &--maxwidth{
         max-width: 320px;
         @media only screen and (min-width: 1040px) {
@@ -351,7 +356,9 @@ body{
             gap: 11px;
             color: #FFF;
             line-height: 0.1;
-            
+            a{
+                color: #FFF;
+            }
             &__ico{
                 overflow-clip-margin: unset;
             }

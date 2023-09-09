@@ -4,6 +4,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .global {
   display: flex;
   flex-direction: column;
@@ -111,6 +115,7 @@ body {
   display: flex;
   flex-direction: column;
   width: auto;
+  gap: 20px;
 }
 .wrapper--maxwidth {
   max-width: 320px;
@@ -277,6 +282,9 @@ body {
   gap: 11px;
   color: #FFF;
   line-height: 0.1;
+}
+.footer__container__elem a {
+  color: #FFF;
 }
 .footer__container__elem__ico {
   overflow-clip-margin: unset;
