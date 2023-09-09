@@ -106,6 +106,17 @@ body {
   position: relative;
   left: -19px;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media only screen and (min-width: 1040px) {
+  .wrapper {
+    width: auto;
+  }
+}
+
 .resto {
   display: flex;
   flex-direction: column;
@@ -115,9 +126,12 @@ body {
   align-items: center;
   gap: 20px;
 }
+.resto--grp {
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (min-width: 1040px) {
   .resto--grp {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -126,7 +140,6 @@ body {
 }
 .resto__title {
   width: 80%;
-  margin: auto;
 }
 .resto__card {
   display: flex;
