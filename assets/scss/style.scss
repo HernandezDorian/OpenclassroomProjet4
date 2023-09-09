@@ -104,9 +104,10 @@ body{
         margin: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
         gap: 25px;
         width: 80vw;
+        max-width: 1000px;
         @media only screen and (min-width: 1040px) {
             flex-direction: row;
             align-items: center;
@@ -148,7 +149,13 @@ body{
     display: flex;
     flex-direction: column;
     width: auto;
-   
+    &--maxwidth{
+        max-width: 320px;
+        @media only screen and (min-width: 1040px) {
+            max-width: 1022px;
+            
+        }
+    }
 }
 
 .resto{
