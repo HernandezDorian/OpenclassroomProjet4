@@ -70,9 +70,10 @@ body {
   display: flex;
   flex-direction: column;
   padding: 65px 0;
+  justify-content: center;
+  align-items: center;
 }
 .fonction__title {
-  margin: auto;
   width: 80%;
 }
 .fonction__cards {
@@ -81,7 +82,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  width: 80%;
+  width: 80vw;
 }
 @media only screen and (min-width: 1040px) {
   .fonction__cards {
@@ -109,12 +110,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-@media only screen and (min-width: 1040px) {
-  .wrapper {
-    width: auto;
-  }
+  width: auto;
 }
 
 .resto {
@@ -144,7 +140,8 @@ body {
 .resto__card {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 80vw;
+  min-width: 300px;
   max-width: 500px;
   border-radius: 15px;
   background-color: #FFF;
