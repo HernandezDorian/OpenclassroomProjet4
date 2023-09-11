@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+$primaryPurple: #9356DC;
+$secondaryPink: #FF79DA;
+$tertiaryGreen: #99E2D0;
+
+$txtPolice: 'Roboto', sans-serif;
+$titlePolice: 'Shrikhand', sans-serif;
+
+
+body{
+    margin: 0;
+    font-family: $txtPolice
+}
+
+a{
+    text-decoration: none !important;
+    color: #000;
+    &:visited{
+        text-decoration: none !important; 
+        color: #000;
+    }
+}
+
+.firstElem{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        &__logo{
+            padding: 14px 0 14px 0;
+
+        }       
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    padding: 25px;
+    @media only screen and (min-width: 1040px) {
+            
+        flex-direction: row-reverse;
+        padding-top: 50px;
+    }
+    &__logo{
+        filter: invert(99%) sepia(75%) saturate(0%) hue-rotate(271deg) brightness(113%) contrast(100%);
+        // margin-bottom: 10px;
+        @media only screen and (min-width: 1040px) {
+            
+            margin-left: 60px;
+            
+        }
+        width: 136px;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        height: 20%;
+        justify-content: center;
+        @media only screen and (min-width: 1040px) {
+            
+            flex-direction: row;
+            gap: 20px;
+        }
+        
+        &__elem{
+            display: flex;
+            gap: 11px;
+            color: #FFF;
+            line-height: 0.1;
+            a{
+                color: #FFF;
+            }
+            &__ico{
+                overflow-clip-margin: unset;
+            }
+        }
+    }
+}

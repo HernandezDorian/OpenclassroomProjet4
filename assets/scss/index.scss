@@ -1,27 +1,9 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
-
-
 $primaryPurple: #9356DC;
 $secondaryPink: #FF79DA;
 $tertiaryGreen: #99E2D0;
 
 $txtPolice: 'Roboto', sans-serif;
 $titlePolice: 'Shrikhand', sans-serif;
-
-body{
-    margin: 0;
-    font-family: $txtPolice
-}
-
-a{
-    text-decoration: none !important;
-    color: #000;
-    &:visited{
-        text-decoration: none !important; 
-        color: #000;
-    }
-}
-
 
 .global{
     display: flex;
