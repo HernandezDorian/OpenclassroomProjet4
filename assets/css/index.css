@@ -3,17 +3,6 @@
   flex-direction: column;
 }
 
-.firstElem {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.firstElem__logo {
-  padding: 14px 0 14px 0;
-}
-
 .location {
   display: flex;
   flex-direction: row;
@@ -51,6 +40,7 @@
 }
 .explore__button:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
 .explore__button__txt {
   padding: 15px 17px 15px 17px;
@@ -101,6 +91,7 @@
   position: relative;
   left: -19px;
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -213,10 +204,6 @@
   background-position: center;
 }
 
-.invisible {
-  display: none;
-}
-
 #likebtn1:checked + label > div, #likebtn2:checked + label > div, #likebtn3:checked + label > div, #likebtn4:checked + label > div {
   background-image: url("../images/icon/Status=Liked.svg");
 }
@@ -236,53 +223,6 @@
 
 .bgres4 {
   background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  padding: 25px;
-}
-@media only screen and (min-width: 1040px) {
-  .footer {
-    flex-direction: row-reverse;
-    padding-top: 50px;
-  }
-}
-.footer__logo {
-  filter: invert(99%) sepia(75%) saturate(0%) hue-rotate(271deg) brightness(113%) contrast(100%);
-  width: 136px;
-}
-@media only screen and (min-width: 1040px) {
-  .footer__logo {
-    margin-left: 60px;
-  }
-}
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  height: 20%;
-  justify-content: center;
-}
-@media only screen and (min-width: 1040px) {
-  .footer__container {
-    flex-direction: row;
-    gap: 20px;
-  }
-}
-.footer__container__elem {
-  display: flex;
-  gap: 11px;
-  color: #FFF;
-  line-height: 0.1;
-}
-.footer__container__elem a {
-  color: #FFF;
-}
-.footer__container__elem__ico {
-  overflow-clip-margin: unset;
 }
 
 /*# sourceMappingURL=index.css.map */

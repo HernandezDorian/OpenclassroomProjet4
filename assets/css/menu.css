@@ -1,3 +1,37 @@
+.mainbg1 {
+  display: flex;
+  height: 275px;
+  background: #fff url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center top;
+  background-size: cover;
+}
 
+main {
+  background: white !important;
+  padding: 0 2%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+.title__title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+}
+.title__img {
+  align-self: center;
+  height: 24px;
+  width: 24px;
+  background-image: url("../images/icon/Status=Default.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#likebtn1:checked + label > div {
+  background-image: url("../images/icon/Status=Liked.svg");
+}
 
 /*# sourceMappingURL=menu.css.map */

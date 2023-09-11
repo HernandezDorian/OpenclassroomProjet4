@@ -10,18 +10,6 @@ $titlePolice: 'Shrikhand', sans-serif;
     flex-direction: column;
 }
 
-.firstElem{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-        &__logo{
-            padding: 14px 0 14px 0;
-
-        }       
-}
-
 .location{
     display: flex;
     flex-direction: row;
@@ -57,7 +45,7 @@ $titlePolice: 'Shrikhand', sans-serif;
 
     &__button{
         border-radius: 25px;
-        background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background: linear-gradient(193deg, $primaryPurple -11.44%, $secondaryPink 123.93%);
         border: none;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
         
@@ -65,6 +53,7 @@ $titlePolice: 'Shrikhand', sans-serif;
     &:hover{
         
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.40);
     }
         
         
@@ -124,13 +113,13 @@ $titlePolice: 'Shrikhand', sans-serif;
                 
             }
 
-            &__ico{
+            // &__ico{
                 
-            }
+            // }
 
-            &__txt{
+            // &__txt{
                 
-            }
+            // }
         }
     }
 
@@ -282,9 +271,7 @@ $titlePolice: 'Shrikhand', sans-serif;
     }
 }
 
-.invisible{
-    display: none;
-}
+
 
 #likebtn1:checked + label > div, #likebtn2:checked + label > div,#likebtn3:checked + label > div,#likebtn4:checked + label > div{
     background-image: url("../images/icon/Status=Liked.svg");
@@ -308,51 +295,5 @@ $titlePolice: 'Shrikhand', sans-serif;
     background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    background-color: #353535;
-    padding: 25px;
-    @media only screen and (min-width: 1040px) {
-            
-        flex-direction: row-reverse;
-        padding-top: 50px;
-    }
-    &__logo{
-        filter: invert(99%) sepia(75%) saturate(0%) hue-rotate(271deg) brightness(113%) contrast(100%);
-        // margin-bottom: 10px;
-        @media only screen and (min-width: 1040px) {
-            
-            margin-left: 60px;
-            
-        }
-        width: 136px;
-    }
 
-    &__container{
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        height: 20%;
-        justify-content: center;
-        @media only screen and (min-width: 1040px) {
-            
-            flex-direction: row;
-            gap: 20px;
-        }
-        
-        &__elem{
-            display: flex;
-            gap: 11px;
-            color: #FFF;
-            line-height: 0.1;
-            a{
-                color: #FFF;
-            }
-            &__ico{
-                overflow-clip-margin: unset;
-            }
-        }
-    }
-}
 

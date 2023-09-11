@@ -34,6 +34,13 @@ a{
         }       
 }
 
+.invisible{
+    display: none;
+}
+
+#likebtn1:checked + label > div, #likebtn2:checked + label > div,#likebtn3:checked + label > div,#likebtn4:checked + label > div{
+    background-image: url("../images/icon/Status=Liked.svg");
+}
 
 .footer{
     display: flex;
