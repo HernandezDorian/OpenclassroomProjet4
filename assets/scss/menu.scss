@@ -5,17 +5,27 @@ $tertiaryGreen: #99E2D0;
 $txtPolice: 'Roboto', sans-serif;
 $titlePolice: 'Shrikhand', sans-serif;
 
+.global{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    justify-content: center;
+    
+}
 
 .mainbg1{
     display: flex;
     height: 275px;
-    background:#fff url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center top;
+    background:#fff url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center ;
     background-size: cover;
 }
 
 main{
     background: white !important;
-    padding: 0 2%;
+    padding: 0 3%;
+    border-radius: 30px 30px 0 0;
+    margin-top: -25px;
 }
 
 .title{
@@ -27,6 +37,7 @@ main{
     &__title{
         font-family: $titlePolice;
         font-size: 28px;
+        
     }
 
     &__img{
@@ -44,3 +55,45 @@ main{
     background-image: url("../images/icon/Status=Liked.svg");
 }
 
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+    &__title{
+            margin-top: 15px;
+        &__title{
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        &__greenline{
+            background-color: $tertiaryGreen;
+            width: 40px;
+            height: 3px;
+            margin-top: -15px;
+        }
+    }
+    &__elem{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        
+        &__food{
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 10px;
+            border-radius: 15.043px;
+            background: var(--White, #FFF);
+            box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.15);
+            &__title{
+
+            }
+            &__txt{
+
+            }
+            &__price{
+
+            }
+        }
+    }
+}
