@@ -154,10 +154,13 @@ a{
     flex-direction: column;
     width: auto;
     gap: 20px;
+    @media only screen and (min-width: 1040px) {
+        max-width: 1000px;
+    }
     &--maxwidth{
         max-width: 320px;
         @media only screen and (min-width: 1040px) {
-            max-width: 1022px;
+            max-width: 1000px;
             
         }
     }

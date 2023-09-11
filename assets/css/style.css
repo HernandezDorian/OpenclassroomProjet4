@@ -117,12 +117,17 @@ a {
   width: auto;
   gap: 20px;
 }
+@media only screen and (min-width: 1040px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+}
 .wrapper--maxwidth {
   max-width: 320px;
 }
 @media only screen and (min-width: 1040px) {
   .wrapper--maxwidth {
-    max-width: 1022px;
+    max-width: 1000px;
   }
 }
 
