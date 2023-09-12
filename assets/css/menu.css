@@ -131,7 +131,7 @@ main {
 
 #foodcheck1:checked + label::after, #foodcheck2:checked + label::after, #foodcheck3:checked + label::after, #foodcheck4:checked + label::after, #foodcheck5:checked + label::after, #foodcheck6:checked + label::after, #foodcheck7:checked + label::after, #foodcheck8:checked + label::after, #foodcheck9:checked + label::after {
   width: 100%;
-  animation-delay: 2s;
+  animation-delay: 0s;
 }
 
 #foodcheck1:checked + label > div, #foodcheck2:checked + label > div, #foodcheck3:checked + label > div, #foodcheck4:checked + label > div, #foodcheck5:checked + label > div, #foodcheck6:checked + label > div #foodcheck7:checked + label > div, #foodcheck8:checked + label > div, #foodcheck9:checked + label > div {
