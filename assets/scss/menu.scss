@@ -159,6 +159,10 @@ main{
     width: 59px; // La largeur lorsque la checkbox est cochée
     
   }
+
+  #foodcheck1:checked + label > div, #foodcheck2:checked + label > div, #foodcheck3:checked + label > div, #foodcheck4:checked + label > div, #foodcheck5:checked + label > div, #foodcheck6:checked + label > div #foodcheck7:checked + label > div, #foodcheck8:checked + label > div, #foodcheck9:checked + label > div{
+    border-radius: 15px 0 0 15px;
+  }
   
 
 .command{
