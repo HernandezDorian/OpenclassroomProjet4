@@ -89,6 +89,7 @@ main {
   background: var(--White, #FFF);
   box-shadow: 0px 4.01149px 15px 0px rgba(0, 0, 0, 0.15);
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 .menu__elem__food__title {
   white-space: nowrap;
@@ -130,10 +131,12 @@ main {
 
 #foodcheck1:checked + label::after, #foodcheck2:checked + label::after, #foodcheck3:checked + label::after, #foodcheck4:checked + label::after, #foodcheck5:checked + label::after, #foodcheck6:checked + label::after, #foodcheck7:checked + label::after, #foodcheck8:checked + label::after, #foodcheck9:checked + label::after {
   width: 100%;
+  animation-delay: 2s;
 }
 
 #foodcheck1:checked + label > div, #foodcheck2:checked + label > div, #foodcheck3:checked + label > div, #foodcheck4:checked + label > div, #foodcheck5:checked + label > div, #foodcheck6:checked + label > div #foodcheck7:checked + label > div, #foodcheck8:checked + label > div, #foodcheck9:checked + label > div {
   border-radius: 15px 0 0 15px;
+  width: calc(100% - 59px);
 }
 
 .command {

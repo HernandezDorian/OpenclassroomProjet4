@@ -100,7 +100,7 @@ main{
             background: var(--White, #FFF);
             box-shadow: 0px 4.01149px 15px 0px rgba(0, 0, 0, 0.15);
             width: 100%;
-
+            transition: all 0.3s ease-in-out;
             
             &__title{
                 // display: flex;
@@ -123,6 +123,7 @@ main{
                 max-width: 100%;
             }
             &--div1{
+
                 max-width: 90%;
             }
             &--div2{
@@ -163,12 +164,13 @@ main{
      // La largeur lorsque la checkbox est cochée
     // min-width: 10px;
     width: 100%;
+    animation-delay: 2s;
   }
 
   #foodcheck1:checked + label > div, #foodcheck2:checked + label > div, #foodcheck3:checked + label > div, #foodcheck4:checked + label > div, #foodcheck5:checked + label > div, #foodcheck6:checked + label > div #foodcheck7:checked + label > div, #foodcheck8:checked + label > div, #foodcheck9:checked + label > div{
     border-radius: 15px 0 0 15px;
     
-    // width: calc(100% - 59px);
+    width: calc(100% - 59px);
     
   }
   
