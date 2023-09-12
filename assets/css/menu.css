@@ -18,6 +18,15 @@ main {
   border-radius: 30px 30px 0 0;
   margin-top: -25px;
 }
+@media only screen and (min-width: 1040px) {
+  main {
+    width: 90%;
+    min-width: 1030px;
+    max-width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .title {
   display: flex;
@@ -73,6 +82,12 @@ main {
   border-radius: 15.043px;
   background: var(--White, #FFF);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.15);
+}
+.command {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
 }
 
 /*# sourceMappingURL=menu.css.map */

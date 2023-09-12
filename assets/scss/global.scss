@@ -42,6 +42,29 @@ a{
     background-image: url("../images/icon/Status=Liked.svg");
 }
 
+.button{
+        border-radius: 25px;
+        background: linear-gradient(193deg, $primaryPurple -11.44%, $secondaryPink 123.93%);
+        border: none;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        
+
+    &:hover{
+        
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.40);
+    }
+        
+        
+        &__txt{
+            padding: 15px 17px 15px 17px;
+            font-size: 20px;
+            color: #FFF;
+            display: inline-block;
+            white-space: nowrap;
+        }
+    }
+
 .footer{
     display: flex;
     flex-direction: column;
