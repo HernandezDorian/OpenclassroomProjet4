@@ -94,27 +94,49 @@ main{
             background: var(--White, #FFF);
             box-shadow: 0px 4.01149px 15px 0px rgba(0, 0, 0, 0.15);
             width: 100%;
+
             
             &__title{
-
+                display: flex;
+                font-size: 18px;
+                height: 18px;
+                white-space: nowrap;
+                overflow-wrap: normal;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100%;
             }
             &__txt{
-
-                
+                display: flex;
+                font-size: 15px;
+                font-weight: 100;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100%;
             }
+            // &--div1{
+            //     display: flex;
+            //     flex-direction: column;
+            //     width: fit-content;
+            //     max-width: 100%;
+            // }
             &--div2{
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: flex-end;
+                max-width: 100%;
             }
             &__price{
-                
+                display: flex;
                 
             }
         }
     }
 }
+
+
 
 #foodcheck1 + label,#foodcheck2 + label,#foodcheck3 + label, #foodcheck4 + label, #foodcheck5 + label, #foodcheck6 + label, #foodcheck7 + label, #foodcheck8 + label, #foodcheck9 + label{
     display: flex;
@@ -127,11 +149,15 @@ main{
       background-color: #99E2D0;
       width: 0; // La largeur initiale est 0
       transition: width 0.3s ease-in-out; // La transition s'applique uniquement à la largeur
+
+      
     }
   }
   
   #foodcheck1:checked + label::after, #foodcheck2:checked + label::after, #foodcheck3:checked + label::after, #foodcheck4:checked + label::after, #foodcheck5:checked + label::after, #foodcheck6:checked + label::after, #foodcheck7:checked + label::after,#foodcheck8:checked + label::after,#foodcheck9:checked + label::after{
+    
     width: 59px; // La largeur lorsque la checkbox est cochée
+    
   }
   
 
