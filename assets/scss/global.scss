@@ -102,13 +102,17 @@ a{
             display: flex;
             gap: 11px;
             color: #FFF;
-            line-height: 0.1;
+            // line-height: 1;
+            font-size: 15px;
             a{
                 color: #FFF;
             }
             &__ico{
-                overflow-clip-margin: unset;
+                width: 15px;
             }
         }
     }
 }
+
+
+

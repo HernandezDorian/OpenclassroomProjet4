@@ -11,6 +11,19 @@
   justify-content: center;
 }
 
+.firstElem {
+  padding: 0 16px;
+}
+.firstElem__arrow {
+  margin-right: auto;
+  position: relative;
+}
+.firstElem__logo {
+  align-self: center;
+  justify-self: center;
+  margin-right: auto;
+}
+
 .mainbg1 {
   display: flex;
   height: 275px;

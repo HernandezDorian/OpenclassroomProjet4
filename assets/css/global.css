@@ -88,13 +88,13 @@ a:visited {
   display: flex;
   gap: 11px;
   color: #FFF;
-  line-height: 0.1;
+  font-size: 15px;
 }
 .footer__container__elem a {
   color: #FFF;
 }
 .footer__container__elem__ico {
-  overflow-clip-margin: unset;
+  width: 15px;
 }
 
 /*# sourceMappingURL=global.css.map */

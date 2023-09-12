@@ -20,6 +20,26 @@ $titlePolice: 'Shrikhand', sans-serif;
     
 }
 
+.firstElem{
+    padding: 0 16px;
+    &__arrow{
+        margin-right: auto;
+        
+        position: relative;
+        
+    }
+    &__logo{
+        align-self: center;
+        justify-self: center;
+        margin-right: auto;
+        
+    }
+}
+
+// .firstElem{
+//     justify-content: space-between;
+// }
+
 .mainbg1{
     display: flex;
     height: 275px;
