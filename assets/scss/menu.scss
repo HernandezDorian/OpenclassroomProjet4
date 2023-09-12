@@ -123,7 +123,7 @@ main{
                 max-width: 100%;
             }
             &--div1{
-                width: 100%;
+                max-width: 90%;
             }
             &--div2{
                 display: flex;
@@ -133,14 +133,12 @@ main{
                 max-width: 100%;
             }
             &__price{
-                display: flex;
+                // display: flex;
                 
             }
         }
     }
 }
-
-
 
 #foodcheck1 + label,#foodcheck2 + label,#foodcheck3 + label, #foodcheck4 + label, #foodcheck5 + label, #foodcheck6 + label, #foodcheck7 + label, #foodcheck8 + label, #foodcheck9 + label{
     display: flex;
@@ -152,22 +150,26 @@ main{
       content: url(../images/icon/Check.svg);
       background-color: #99E2D0;
       width: 0; // La largeur initiale est 0
-      transition: width 0.3s ease-in-out; // La transition s'applique uniquement à la largeur
-
+    //   transition: width 0.3s ease-in-out; // La transition s'applique uniquement à la largeur
+      transition: all 0.3s ease-in-out;
+      max-width: 59px;
       
     }
   }
   
   #foodcheck1:checked + label::after, #foodcheck2:checked + label::after, #foodcheck3:checked + label::after, #foodcheck4:checked + label::after, #foodcheck5:checked + label::after, #foodcheck6:checked + label::after, #foodcheck7:checked + label::after,#foodcheck8:checked + label::after,#foodcheck9:checked + label::after{
     
-    
-    min-width: 59px; // La largeur lorsque la checkbox est cochée
-    
+    // animation: expandAfter 1s forwards;
+     // La largeur lorsque la checkbox est cochée
+    // min-width: 10px;
+    width: 100%;
   }
 
   #foodcheck1:checked + label > div, #foodcheck2:checked + label > div, #foodcheck3:checked + label > div, #foodcheck4:checked + label > div, #foodcheck5:checked + label > div, #foodcheck6:checked + label > div #foodcheck7:checked + label > div, #foodcheck8:checked + label > div, #foodcheck9:checked + label > div{
     border-radius: 15px 0 0 15px;
-    width: calc(100% - 59px);
+    
+    // width: calc(100% - 59px);
+    
   }
   
 
