@@ -38,8 +38,13 @@ a{
     display: none;
 }
 
+#likebtn1 + label > div{
+    
+    
+}
 #likebtn1:checked + label > div, #likebtn2:checked + label > div,#likebtn3:checked + label > div,#likebtn4:checked + label > div{
     background-image: url("../images/icon/Status=Liked.svg");
+    
 }
 
 .button{
