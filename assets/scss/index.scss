@@ -5,6 +5,81 @@ $tertiaryGreen: #99E2D0;
 $txtPolice: 'Roboto', sans-serif;
 $titlePolice: 'Shrikhand', sans-serif;
 
+@keyframes disable-main {
+    from {
+        opacity: 0;;
+    }
+
+    99%{
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+
+  @keyframes disable-loader {
+    from {
+        width: 100%;
+        height: auto;
+    }
+
+    99%{
+        width: 100%;
+        height: auto;
+    }
+  
+    to {
+        width: 0;
+        height: 0;
+    }
+  }
+
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      transform: rotate(360deg);
+    }
+  }
+
+main{
+    animation: disable-main 3s cubic-bezier(.17,.67,.83,.67) forwards;
+    opacity: 0;
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: disable-loader 3s cubic-bezier(.17,.67,.83,.67) forwards;
+    &__spin{
+        position: absolute;
+        top: 80px;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        animation: disable-loader 3s cubic-bezier(.17,.67,.83,.67) forwards;
+        animation: spinner 3s forwards cubic-bezier(.17,.67,.83,.67) ;
+        
+        
+        border: 10px solid $tertiaryGreen;
+        border-bottom-color: $primaryPurple;
+    }
+}
+
 .global{
     display: flex;
     flex-direction: column;
