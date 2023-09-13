@@ -23,11 +23,17 @@ $titlePolice: 'Shrikhand', sans-serif;
     from {
         width: 100%;
         height: auto;
+        opacity: 1;
+    }
+
+    90%{
+        opacity: 1;
     }
 
     99%{
         width: 100%;
         height: auto;
+        opacity: 0;
     }
   
     to {
@@ -39,15 +45,10 @@ $titlePolice: 'Shrikhand', sans-serif;
   @keyframes spinner {
     from {
       transform: rotate(0deg);
-      opacity: 1;
-    }
-
-    90%{
-        opacity: 1;
+      
     }
 
     to {
-      opacity: 0;
       transform: rotate(360deg);
     }
   }
@@ -68,11 +69,11 @@ main{
         // top: 50%;
         // left: 50%;
         // transform: translate(-50%, -50%);
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         animation: disable-loader 3s cubic-bezier(.17,.67,.83,.67) forwards;
-        animation: spinner 3s forwards cubic-bezier(.17,.67,.83,.67) ;
+        animation: spinner 1.5s cubic-bezier(.17,.67,.83,.67) 2 forwards;
         
         
         border: 10px solid $tertiaryGreen;
