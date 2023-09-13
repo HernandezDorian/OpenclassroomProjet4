@@ -5,11 +5,7 @@ $tertiaryGreen: #99E2D0;
 $txtPolice: 'Roboto', sans-serif;
 $titlePolice: 'Shrikhand', sans-serif;
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
 
 .global{
     display: flex;
@@ -35,10 +31,6 @@ $titlePolice: 'Shrikhand', sans-serif;
         
     }
 }
-
-// .firstElem{
-//     justify-content: space-between;
-// }
 
 .mainbg1{
     display: flex;
@@ -88,6 +80,34 @@ main{
     background-image: url("../images/icon/Status=Liked.svg");
 }
 
+@keyframes appear {
+    from {
+      
+        transform: translate3d(-100%, 0, 0);
+      
+    }
+
+    95%{
+        transform: translate3d(+10%, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+  }
+
+.step1{
+    animation: appear 0.3s cubic-bezier(.17,.67,.83,.67) forwards;
+}
+
+.step2{
+    animation: appear 0.6s cubic-bezier(.17,.67,.83,.67) forwards;
+}
+
+.step3{
+    animation: appear 0.9s cubic-bezier(.17,.67,.83,.67) forwards;
+}
+
 .menu{
     display: flex;
     flex-direction: column;
@@ -104,8 +124,12 @@ main{
             width: 40px;
             height: 3px;
             margin-top: -15px;
+            margin-bottom: 25px;
         }
     }
+
+    
+
     &__elem{
         
         display: flex;
@@ -115,6 +139,7 @@ main{
         &__food{
             display: flex;
             justify-content: space-between;
+            
             padding: 5px 10px;
             border-radius: 15px;
             background: var(--White, #FFF);
@@ -123,18 +148,12 @@ main{
             transition: all 0.3s ease-in-out;
             
             &__title{
-                // display: flex;
-                // font-size: 18px;
-                // height: 18px;
                 white-space: nowrap;
-                // overflow-wrap: normal;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                // max-width: 100%;
 
             }
             &__txt{
-                // display: flex;
                 font-size: 15px;
                 font-weight: 100;
                 white-space: nowrap;
@@ -154,7 +173,6 @@ main{
                 max-width: 100%;
             }
             &__price{
-                // display: flex;
                 
             }
         }
@@ -168,10 +186,9 @@ main{
       align-items: center;
       justify-content: center;
       border-radius: 0 15px 15px 0;
-      content: url(../images/icon/Check.svg);
+      content: "";
       background-color: #99E2D0;
-      width: 0; // La largeur initiale est 0
-    //   transition: width 0.3s ease-in-out; // La transition s'applique uniquement à la largeur
+      width: 0;
       transition: all 0.3s ease-in-out;
       max-width: 59px;
       
@@ -180,11 +197,9 @@ main{
   
   #foodcheck1:checked + label::after, #foodcheck2:checked + label::after, #foodcheck3:checked + label::after, #foodcheck4:checked + label::after, #foodcheck5:checked + label::after, #foodcheck6:checked + label::after, #foodcheck7:checked + label::after,#foodcheck8:checked + label::after,#foodcheck9:checked + label::after{
     
-    // animation: expandAfter 1s forwards;
-     // La largeur lorsque la checkbox est cochée
-    // min-width: 10px;
     width: 100%;
     animation-delay: 0s;
+    content: url(../images/icon/Check.svg);
   }
 
   #foodcheck1:checked + label > div, #foodcheck2:checked + label > div, #foodcheck3:checked + label > div, #foodcheck4:checked + label > div, #foodcheck5:checked + label > div, #foodcheck6:checked + label > div #foodcheck7:checked + label > div, #foodcheck8:checked + label > div, #foodcheck9:checked + label > div{

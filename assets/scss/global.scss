@@ -7,6 +7,11 @@ $tertiaryGreen: #99E2D0;
 $txtPolice: 'Roboto', sans-serif;
 $titlePolice: 'Shrikhand', sans-serif;
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body{
     margin: 0;
