@@ -59,6 +59,10 @@ main {
   border-bottom-color: #9356DC;
 }
 
+.firstElem {
+  padding: 24px;
+}
+
 .global {
   display: flex;
   flex-direction: column;
@@ -168,13 +172,13 @@ main {
 .resto--grp {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 @media only screen and (min-width: 1040px) {
   .resto--grp {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: 20px;
   }
 }
 .resto__title {
@@ -246,10 +250,6 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-#likebtn1:checked + label > div, #likebtn2:checked + label > div, #likebtn3:checked + label > div, #likebtn4:checked + label > div {
-  background-image: url("../images/icon/Status=Liked.svg");
 }
 
 .bgres1 {

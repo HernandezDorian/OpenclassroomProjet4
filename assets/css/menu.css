@@ -5,9 +5,6 @@
   justify-content: center;
 }
 
-.firstElem {
-  padding: 0 16px;
-}
 .firstElem__arrow {
   margin-right: auto;
   position: relative;
@@ -145,10 +142,28 @@ main {
   align-items: flex-end;
   max-width: 100%;
 }
-#foodcheck1 + label, #foodcheck2 + label, #foodcheck3 + label, #foodcheck4 + label, #foodcheck5 + label, #foodcheck6 + label, #foodcheck7 + label, #foodcheck8 + label, #foodcheck9 + label {
+#foodcheck1 + label,
+#foodcheck2 + label,
+#foodcheck3 + label,
+#foodcheck4 + label,
+#foodcheck5 + label,
+#foodcheck6 + label,
+#foodcheck7 + label,
+#foodcheck8 + label,
+#foodcheck9 + label,
+#foodcheck10 + label {
   display: flex;
 }
-#foodcheck1 + label::after, #foodcheck2 + label::after, #foodcheck3 + label::after, #foodcheck4 + label::after, #foodcheck5 + label::after, #foodcheck6 + label::after, #foodcheck7 + label::after, #foodcheck8 + label::after, #foodcheck9 + label::after {
+#foodcheck1 + label::after,
+#foodcheck2 + label::after,
+#foodcheck3 + label::after,
+#foodcheck4 + label::after,
+#foodcheck5 + label::after,
+#foodcheck6 + label::after,
+#foodcheck7 + label::after,
+#foodcheck8 + label::after,
+#foodcheck9 + label::after,
+#foodcheck10 + label::after {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,13 +175,31 @@ main {
   max-width: 59px;
 }
 
-#foodcheck1:checked + label::after, #foodcheck2:checked + label::after, #foodcheck3:checked + label::after, #foodcheck4:checked + label::after, #foodcheck5:checked + label::after, #foodcheck6:checked + label::after, #foodcheck7:checked + label::after, #foodcheck8:checked + label::after, #foodcheck9:checked + label::after {
+#foodcheck1:checked + label::after,
+#foodcheck2:checked + label::after,
+#foodcheck3:checked + label::after,
+#foodcheck4:checked + label::after,
+#foodcheck5:checked + label::after,
+#foodcheck6:checked + label::after,
+#foodcheck7:checked + label::after,
+#foodcheck8:checked + label::after,
+#foodcheck9:checked + label::after,
+#foodcheck10:checked + label::after {
   width: 100%;
   animation-delay: 0s;
   content: url(../images/icon/Check.svg);
 }
 
-#foodcheck1:checked + label > div, #foodcheck2:checked + label > div, #foodcheck3:checked + label > div, #foodcheck4:checked + label > div, #foodcheck5:checked + label > div, #foodcheck6:checked + label > div #foodcheck7:checked + label > div, #foodcheck8:checked + label > div, #foodcheck9:checked + label > div {
+#foodcheck1:checked + label > div,
+#foodcheck2:checked + label > div,
+#foodcheck3:checked + label > div,
+#foodcheck4:checked + label > div,
+#foodcheck5:checked + label > div,
+#foodcheck6:checked + label > div,
+#foodcheck7:checked + label > div,
+#foodcheck8:checked + label > div,
+#foodcheck9:checked + label > div,
+#foodcheck10:checked + label > div {
   border-radius: 15px 0 0 15px;
   width: calc(100% - 59px);
 }
