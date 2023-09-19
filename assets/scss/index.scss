@@ -54,7 +54,7 @@ $titlePolice: 'Shrikhand', sans-serif;
   }
 
 main{
-    animation: disable-main 3s cubic-bezier(.17,.67,.83,.67) forwards;
+    animation: disable-main 3s ease-in-out forwards;
     opacity: 0;
 }
 
@@ -62,15 +62,15 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: disable-loader 3s cubic-bezier(.17,.67,.83,.67) forwards;
+    animation: disable-loader 3s ease-in-out forwards;
     &__spin{
         position: absolute;
         top: 80px;
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        animation: disable-loader 3s cubic-bezier(.17,.67,.83,.67) forwards;
-        animation: spinner 1.5s cubic-bezier(.17,.67,.83,.67) 2 forwards;
+        animation: disable-loader 3s ease-in-out forwards;
+        animation: spinner 1.5s ease-in-out 2 forwards;
         
         
         border: 10px solid $tertiaryGreen;

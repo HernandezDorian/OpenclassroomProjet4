@@ -60,7 +60,7 @@ a{
 #likebtn3:checked + label > div,
 #likebtn4:checked + label > div{
     background-image: url("../images/icon/Status=Liked.svg");
-    animation: like 1s cubic-bezier(.17,.67,.83,.67) forwards;
+    animation: like 1s ease-in-out forwards;
 }
 
 .button{
