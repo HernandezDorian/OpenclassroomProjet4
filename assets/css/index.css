@@ -37,7 +37,7 @@
   }
 }
 main {
-  animation: disable-main 3s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+  animation: disable-main 3s ease-in-out forwards;
   opacity: 0;
 }
 
@@ -45,7 +45,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: disable-loader 3s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+  animation: disable-loader 3s ease-in-out forwards;
 }
 .loader__spin {
   position: absolute;
@@ -53,8 +53,8 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  animation: disable-loader 3s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
-  animation: spinner 1.5s cubic-bezier(0.17, 0.67, 0.83, 0.67) 2 forwards;
+  animation: disable-loader 3s ease-in-out forwards;
+  animation: spinner 1.5s ease-in-out 2 forwards;
   border: 10px solid #99E2D0;
   border-bottom-color: #9356DC;
 }
@@ -225,12 +225,16 @@ main {
 }
 .resto__card__info {
   display: flex;
-  padding: 15px;
+  flex-direction: column;
+  padding: 15px 0;
   justify-content: space-between;
 }
 .resto__card__info__block {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
   font-size: 20px;
   gap: 10px;
 }
@@ -241,7 +245,7 @@ main {
   margin: 0;
 }
 .resto__card__info__img {
-  align-self: center;
+  display: flex;
   height: 6vw;
   width: 6vw;
   max-width: 40px;

@@ -116,6 +116,9 @@ main{
     padding: 65px 0;
     background: #F6F6F6;
 
+    &__button{
+    }
+
     &__txt{
         padding: 0 5%;
     }
@@ -211,9 +214,6 @@ main{
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-            
-            
-            
         }
     }
     &__title{
@@ -272,11 +272,15 @@ main{
 
         &__info{
             display: flex;
-            padding: 15px;
+            flex-direction: column;
+            padding: 15px 0;
             justify-content: space-between;
             &__block{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 20px;
                 font-size: 20px;
                 gap: 10px;
                 &__title{
@@ -288,7 +292,8 @@ main{
             }
 
             &__img{
-                align-self: center;
+                display: flex;
+                // align-self: center;
                 height: 6vw;
                 width: 6vw;
                 max-width: 40px;
