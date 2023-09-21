@@ -245,7 +245,7 @@ main {
   margin: 0;
 }
 .resto__card__info__img {
-  display: flex;
+  display: inline-block;
   height: 6vw;
   width: 6vw;
   max-width: 40px;

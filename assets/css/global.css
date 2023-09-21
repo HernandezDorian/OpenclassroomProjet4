@@ -44,10 +44,10 @@ a:visited {
     opacity: 1;
   }
 }
-#likebtn1:checked + label > div,
-#likebtn2:checked + label > div,
-#likebtn3:checked + label > div,
-#likebtn4:checked + label > div {
+#likebtn1:checked + label > span,
+#likebtn2:checked + label > span,
+#likebtn3:checked + label > span,
+#likebtn4:checked + label > span {
   background-image: url("../images/icon/Status=Liked.svg");
   animation: like 1s ease-in-out forwards;
 }
