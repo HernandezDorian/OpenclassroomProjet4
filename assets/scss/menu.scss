@@ -16,6 +16,8 @@ $titlePolice: 'Shrikhand', sans-serif;
     
 }
 
+
+
 .firstElem{
     &__arrow{
         margin-right: auto;
@@ -57,7 +59,7 @@ $titlePolice: 'Shrikhand', sans-serif;
 }
 
 main{
-    background: white !important;
+    background: #F6F6F6 !important;
     padding: 0 3%;
     border-radius: 30px 30px 0 0;
     margin-top: -25px;
@@ -130,7 +132,7 @@ main{
     display: flex;
     flex-direction: column;
     margin-top: -15px;
-    
+    padding: 0 100px;
     &__title{
             margin-top: 15px;
         &__title{
@@ -157,8 +159,7 @@ main{
         &__food{
             display: flex;
             justify-content: space-between;
-            
-            padding: 5px 10px;
+            padding: 15px;
             border-radius: 15px;
             background: var(--White, #FFF);
             box-shadow: 0px 4.01149px 15px 0px rgba(0, 0, 0, 0.15);
@@ -167,24 +168,28 @@ main{
             
             &__title{
                 display: block;
-                font-size: 1.17em;
+                font-size: 18px;
+                font-weight: 500px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 font-weight: bold;
                 margin-block-start: 1em;
                 margin-block-end: 1em;
+                margin: 0;
             }
             &__txt{
                 display: block;
                 font-size: 15px;
-                font-weight: 100;
+                font-weight: 300;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 max-width: 100%;
                 margin-block-start: 1em;
                 margin-block-end: 1em;
+                margin: 5px 0 0 0;
+                
             }
             &--div1{
                 

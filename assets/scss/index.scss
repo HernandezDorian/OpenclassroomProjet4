@@ -65,7 +65,7 @@ main{
     animation: disable-loader 3s ease-in-out forwards;
     &__spin{
         position: absolute;
-        top: 80px;
+        top: 120px;
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -78,9 +78,7 @@ main{
     }
 }
 
-.firstElem{
-    padding: 24px;
-}
+
 
 .global{
     display: flex;
@@ -115,11 +113,20 @@ main{
     align-items: center;
     padding: 65px 0;
     background: #F6F6F6;
-
+    gap: 18px;
     &__button{
     }
 
+    &__title{
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0;
+    }
+
     &__txt{
+        margin: 0;
+        font-size: 18px;
+        font-weight: 300;
         padding: 0 5%;
     }
 }
@@ -171,9 +178,10 @@ main{
                 
             // }
 
-            // &__txt{
-                
-            // }
+            &__txt{
+                font-size: 16px;
+                font-weight: 500;
+            }
         }
     }
 
@@ -247,7 +255,7 @@ main{
                 margin: 15px 15px 15px auto;
                 width: fit-content;
                 font-size: 100%;
-                
+                font-weight: 500;
                 max-width: 125px;
 
                 &--hide{
@@ -263,7 +271,6 @@ main{
                 border-radius: 15px 15px 0 0;
                 background-size: cover;
                 padding-bottom: 50%;
-                
                 
             
             }
@@ -290,14 +297,28 @@ main{
                     margin: 0;
                 }
             }
+        
+            &__block{
+                &__title{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                &__txt{
+                    font-size: 17px;
+                    font-weight: 300;
+                }
+
+            }
 
             &__img{
                 display: inline-block;
                 // align-self: center;
-                height: 6vw;
-                width: 6vw;
-                max-width: 40px;
-                max-height: 40px;
+                // height: 6vw;
+                // width: 6vw;
+                // max-width: 40px;
+                // max-height: 40px;
+                width: 22px;
+                height: 21px;
                 background-image: url("../images/icon/Status=Default.svg");
                 background-repeat: no-repeat;
                 background-size: cover;

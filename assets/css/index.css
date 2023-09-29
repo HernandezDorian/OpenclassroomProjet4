@@ -49,7 +49,7 @@ main {
 }
 .loader__spin {
   position: absolute;
-  top: 80px;
+  top: 120px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -57,10 +57,6 @@ main {
   animation: spinner 1.5s ease-in-out 2 forwards;
   border: 10px solid #99E2D0;
   border-bottom-color: #9356DC;
-}
-
-.firstElem {
-  padding: 24px;
 }
 
 .global {
@@ -93,8 +89,17 @@ main {
   align-items: center;
   padding: 65px 0;
   background: #F6F6F6;
+  gap: 18px;
+}
+.explore__title {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
 }
 .explore__txt {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
   padding: 0 5%;
 }
 
@@ -138,6 +143,10 @@ main {
   z-index: 1;
   position: relative;
   left: -19px;
+}
+.fonction__cards__elem__txt {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .wrapper {
@@ -210,6 +219,7 @@ main {
   margin: 15px 15px 15px auto;
   width: fit-content;
   font-size: 100%;
+  font-weight: 500;
   max-width: 125px;
 }
 .resto__card__show__new--hide {
@@ -244,12 +254,18 @@ main {
 .resto__card__info__block__txt {
   margin: 0;
 }
+.resto__card__info__block__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.resto__card__info__block__txt {
+  font-size: 17px;
+  font-weight: 300;
+}
 .resto__card__info__img {
   display: inline-block;
-  height: 6vw;
-  width: 6vw;
-  max-width: 40px;
-  max-height: 40px;
+  width: 22px;
+  height: 21px;
   background-image: url("../images/icon/Status=Default.svg");
   background-repeat: no-repeat;
   background-size: cover;

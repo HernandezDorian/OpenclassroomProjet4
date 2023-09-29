@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 *,
 *::before,
 *::after {
@@ -25,11 +25,15 @@ a:visited {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 16px;
+  height: 96px;
 }
 .firstElem__logo {
   position: absolute;
-  padding: 14px 0 14px 0;
+  width: 200px;
+  height: 96px;
+}
+.firstElem__arrow {
+  padding: 17px;
 }
 
 .invisible {
@@ -44,6 +48,19 @@ a:visited {
     opacity: 1;
   }
 }
+@keyframes unlike {
+  from {
+    opacity: 1;
+    background-image: url("../images/icon/Status=Liked.svg");
+  }
+  99% {
+    opacity: 0;
+    background-image: url("../images/icon/Status=Default.svg");
+  }
+  to {
+    opacity: 0;
+  }
+}
 #likebtn1:checked + label > span,
 #likebtn2:checked + label > span,
 #likebtn3:checked + label > span,
@@ -52,9 +69,16 @@ a:visited {
   animation: like 0.4s ease-in-out forwards;
 }
 
+#likebtn1:not(:checked) + label > span,
+#likebtn2:not(:checked) + label > span,
+#likebtn3:not(:checked) + label > span,
+#likebtn4:not(:checked) + label > span {
+  animation: unlike 0.4s ease-in-out backwards;
+}
+
 .button {
   border-radius: 25px;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   border: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
@@ -75,6 +99,7 @@ a:visited {
   flex-direction: column;
   background-color: #353535;
   padding: 25px;
+  align-items: center;
 }
 @media only screen and (min-width: 1040px) {
   .footer {
@@ -84,7 +109,8 @@ a:visited {
 }
 .footer__logo {
   filter: invert(99%) sepia(75%) saturate(0%) hue-rotate(271deg) brightness(113%) contrast(100%);
-  width: 136px;
+  justify-content: center;
+  width: 139px;
 }
 @media only screen and (min-width: 1040px) {
   .footer__logo {
@@ -97,9 +123,12 @@ a:visited {
   gap: 2px;
   height: 20%;
   justify-content: center;
+  gap: 7px;
+  margin-top: 7px;
 }
 @media only screen and (min-width: 1040px) {
   .footer__container {
+    margin-top: 0;
     flex-direction: row;
     gap: 20px;
   }
