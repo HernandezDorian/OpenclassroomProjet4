@@ -111,7 +111,11 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: -15px;
-  padding: 0 100px;
+}
+@media only screen and (min-width: 1040px) {
+  .menu {
+    padding: 0 100px;
+  }
 }
 .menu__title {
   margin-top: 15px;
